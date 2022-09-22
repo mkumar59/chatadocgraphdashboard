@@ -1,6 +1,34 @@
+@font-face {
+  font-family: 'Poppinsbold';
+  src: local('Poppinsbold'), url(./font/Poppins-Bold.ttf) format('truetype');
+}
+
+
+h4{
+  font-family: 'Poppinsbold';
+  font-size: 14px!important;
+}
 .headerbg{
 background-color: #E9E9E9;
 }
 .sidebarbg{
   background-color: #F3F3F3;
+}
+.dashboardcard{
+  padding:10px 5px 10px 5px;
+  border-radius: 4px;
+  opacity: 1;
+}
+.totalbg{
+  background-color: #007AFF;
+}
+.completeappointmebg{
+  background-color: #34C759;
+}
+.cancelappointmebg{
+ 
+  background-color: #E2002B;
+}
+.rescheduleappointmebg{
+  background-color: #FFFF00;
 }

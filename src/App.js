@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './common/Header'
 import Sidebar from './common/Siderbar';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
           </div>
           <div className='col-12 col-sm-12 col-md-9 col-lg-9'>
               <Header />
-            </div>
+              <Dashboard/>
+          </div>
+         
       </div>
     </div>
   );

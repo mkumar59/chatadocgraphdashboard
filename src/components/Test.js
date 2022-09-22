@@ -36,7 +36,7 @@ export default class Test extends React.Component {
             )
             let dd=[];
             let month1=[];
-            res.data.data.slice(0,10).map((item)=>{
+            res.data.data.slice(0,29).map((item)=>{
                
                 dd.push(item.Total_Appointments);
                 month1.push(item.Date)
@@ -54,6 +54,36 @@ export default class Test extends React.Component {
   render() {
     return (
       <div>
+          <div className='container'>
+          <div className='row'>
+          <div className='col-md-3'>
+            <div className='totalbg dashboardcard'>
+              <h4>Total Appointments</h4>
+              <p>1200</p>
+            </div>
+          </div>
+          <div className='col-md-3'>
+            <div className='completeappointmebg dashboardcard'>
+                <h4>Completed Appointment</h4>
+                <p>1200</p>
+            </div>
+           
+          </div>
+          <div className='col-md-3'>
+            <div className='rescheduleappointmebg dashboardcard'>
+                <h4>Reschedule Appointment</h4>
+                <p>1200</p>
+            </div>
+          </div>
+          <div className='col-md-3'>
+            <div className='cancelappointmebg dashboardcard'>
+                <h4>Cancelled Appointment</h4>
+                <p>1200</p>
+            </div>
+          </div>
+          </div>
+          
+        </div>
         {/* <Bar
           data={state}
           options={{
